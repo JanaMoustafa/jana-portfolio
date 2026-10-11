@@ -28,8 +28,8 @@ function Row({ words }) {
 }
 
 /**
- * Two bands of skills drifting in opposite directions. Scrolling speeds them up in the
- * direction of travel and leans them with the scroll's velocity.
+ * Two level bands of skills drifting in opposite directions. Scrolling speeds them up in
+ * the direction of travel, then they ease back to their resting pace.
  */
 export default function Marquee() {
   const root = useRef(null)
@@ -49,11 +49,9 @@ export default function Marquee() {
         loop.totalTime(loop.duration() * 500)
         return loop
       })
-      const skew = gsap.quickTo('.marquee__rows', 'skewX', { duration: 0.5, ease: 'power3.out' })
       let direction = 1
       const settle = gsap
         .delayedCall(0.2, () => {
-          skew(0)
           loops.forEach((l) => gsap.to(l, { timeScale: direction, duration: 1.2, ease: 'power2.out', overwrite: true }))
         })
         .pause()
@@ -67,7 +65,6 @@ export default function Marquee() {
           direction = self.direction
           const boost = 1 + Math.min(Math.abs(v) / 260, 5)
           loops.forEach((l) => gsap.to(l, { timeScale: direction * boost, duration: 0.25, overwrite: true }))
-          skew(gsap.utils.clamp(-7, 7, v / -220))
           settle.restart(true)
         },
       })

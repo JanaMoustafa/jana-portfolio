@@ -31,7 +31,7 @@ export default function Education() {
             Certifications
           </h3>
           <p className="section__lead" data-reveal>
-            Thirteen certificates from IBM, NVIDIA, Nokia, the Ministry of Communications and others. Each opens the original document.
+            Fourteen certificates from FlyRank, IBM, NVIDIA, Nokia, the Ministry of Communications and others. Each opens the original document.
           </p>
         </div>
         <ul className="certs" data-reveal-group>

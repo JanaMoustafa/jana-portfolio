@@ -1459,8 +1459,6 @@ svg {
 .marquee__rows {
   display: grid;
   gap: clamp(6px, 1vw, 12px);
-  transform: rotate(-2deg) scale(1.04);
-  will-change: transform;
 }
 .marquee__row {
   overflow: hidden;

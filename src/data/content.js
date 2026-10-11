@@ -45,13 +45,14 @@ export const experience = [
   {
     role: 'Machine Learning Intern',
     org: 'FlyRank',
-    period: '2026',
+    period: 'Jul to Sep 2026',
     summary:
       'Applied search-intelligence internship: deciding which web pages an SEO content team should optimise first, using anonymised production search data.',
     stack: ['Python', 'Scikit-learn', 'Pandas', 'Random Forest', 'GroupKFold', 'Jupyter'],
     links: [
       { label: 'Research paper', url: 'https://janamoustafa.github.io/FlyRank-ML/' },
       { label: 'Code', url: 'https://github.com/JanaMoustafa/FlyRank-ML' },
+      { label: 'Certificate', url: '/certificates/FlyRank_ML_Internship_Certificate.pdf' },
     ],
     bullets: [
       'Built an end-to-end CTR opportunity-scoring model that ranks which pages to rewrite first, trained on 22,006 URLs from 30 enterprise clients drawn from Google Search Console and GA4 data.',
@@ -188,6 +189,7 @@ export const education = [
 const drive = (id, usp = 'drive_link') => `https://drive.google.com/file/d/${id}/view?usp=${usp}`
 
 export const certifications = [
+  { issuer: 'FlyRank', title: 'Machine Learning Internship, Certificate of Completion', date: 'Sep 2026', url: '/certificates/FlyRank_ML_Internship_Certificate.pdf' },
   { issuer: 'SaiKet Systems', title: 'Machine Learning Internship', date: 'Sep 2025', url: drive('1QxGe_PtCFOp224Ao2YZf8XPAzphHwbcw') },
   { issuer: 'NVIDIA', title: 'Getting Started with Deep Learning', date: 'Aug 2025', url: drive('1OvsFcM91h1euIBf5_mblsTRN1TB3Rdht') },
   { issuer: 'NTI', title: 'AI for Business', date: 'Aug 2025', url: drive('13tFJ_Ssm0UBLqFiZ-B56AYRwtaKk2uc5') },
