@@ -764,6 +764,30 @@ svg {
   background: var(--purple);
 }
 
+.xp__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.xp__links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 32px;
+  font-weight: 600;
+  color: var(--lavender);
+  transition: color var(--t-base) var(--ease-out);
+}
+.xp__links a:hover {
+  color: var(--pink);
+}
+.xp__links svg {
+  transition: transform var(--t-base) var(--ease-out);
+}
+.xp__links a:hover svg {
+  transform: translate(2px, -2px);
+}
+
 /* ------------------------------------------------------------------
    Projects
    ------------------------------------------------------------------ */

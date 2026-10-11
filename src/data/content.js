@@ -43,6 +43,24 @@ export const experience = [
     ],
   },
   {
+    role: 'Machine Learning Intern',
+    org: 'FlyRank',
+    period: '2026',
+    summary:
+      'Applied search-intelligence internship: deciding which web pages an SEO content team should optimise first, using anonymised production search data.',
+    stack: ['Python', 'Scikit-learn', 'Pandas', 'Random Forest', 'GroupKFold', 'Jupyter'],
+    links: [
+      { label: 'Research paper', url: 'https://janamoustafa.github.io/FlyRank-ML/' },
+      { label: 'Code', url: 'https://github.com/JanaMoustafa/FlyRank-ML' },
+    ],
+    bullets: [
+      'Built an end-to-end CTR opportunity-scoring model that ranks which pages to rewrite first, trained on 22,006 URLs from 30 enterprise clients drawn from Google Search Console and GA4 data.',
+      'Reached a 0.922 ROC-AUC under five-fold GroupKFold validation on unseen clients, and 65.6% precision in the top 100 pages, a 6.56x lift over the 10% base rate and 20.6 points above a logistic-regression benchmark.',
+      'Audited the data for leakage, removing forward-looking and target-proxy columns, wrote a data contract, and limited the model to five features available at decision time.',
+      'Turned the scores into an action playbook with reason codes, a 50-page sprint plan worth an estimated 6,184 extra clicks, human-review safeguards and drift-based retraining triggers, and published the work as a research paper.',
+    ],
+  },
+  {
     role: 'Full-Stack Web Developer',
     org: 'Fridge Check',
     period: '2026',
@@ -82,9 +100,9 @@ export const experience = [
   },
   {
     role: 'Technical Intern',
-    org: 'FkyRank AI, UneeQ Interns, Saiket Software, NTI and ITI',
+    org: 'UneeQ Interns, Saiket Software, NTI and ITI',
     period: '2025',
-    summary: 'Data science and software internships across five organisations.',
+    summary: 'Data science and software internships across four organisations.',
     stack: ['Python', 'Java', 'Dart', 'FlutterFlow', 'Object Detection'],
     bullets: [
       'Cleaned and analysed datasets, created visualisations and insights, and trained machine learning and deep learning models across multiple data science projects.',

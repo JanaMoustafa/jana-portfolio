@@ -13,6 +13,18 @@ export const categories = [
 export const workProjects = [
   // ---------------------------------------------------------------- AI and ML
   {
+    name: 'SEO CTR Opportunity Scoring',
+    category: 'ml',
+    kind: 'FlyRank internship',
+    metric: '0.922 ROC-AUC',
+    description:
+      'Ranks which of 22,006 client web pages are losing the most clicks for their search position, so an editorial team rewrites the right 50 first. A Random Forest validated on unseen clients reached 65.6% precision in the top 100, a 6.56x lift over the base rate.',
+    highlights: ['Leakage audit', 'Grouped cross-validation', 'Action playbook', 'Research paper'],
+    stack: ['Python', 'Scikit-learn', 'Pandas', 'Random Forest'],
+    url: 'https://janamoustafa.github.io/FlyRank-ML/',
+    linkLabel: 'Read the paper',
+  },
+  {
     name: 'Network Performance Prediction Pipeline',
     category: 'ml',
     kind: 'Nokia internship',

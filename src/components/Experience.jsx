@@ -83,6 +83,18 @@ export default function Experience() {
                     <li key={b}>{b}</li>
                   ))}
                 </ul>
+                {job.links && (
+                  <ul className="xp__links" data-reveal>
+                    {job.links.map((l) => (
+                      <li key={l.url}>
+                        <a href={l.url} target="_blank" rel="noopener noreferrer">
+                          {l.label}
+                          <ArrowUpRight />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <ul className="chips" data-reveal aria-label="Technologies">
                   {job.stack.map((s) => (
                     <li className="chip" key={s}>
