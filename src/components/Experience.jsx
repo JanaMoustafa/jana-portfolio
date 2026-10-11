@@ -43,7 +43,7 @@ export default function Experience() {
     <section className="section xp" id="experience" ref={root}>
       <div className="container">
         <div className="section__head">
-          <h2 className="section__title" data-reveal>
+          <h2 className="section__title" data-split>
             Experience
           </h2>
           <p className="section__lead" data-reveal>

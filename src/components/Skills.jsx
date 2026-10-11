@@ -7,7 +7,7 @@ export default function Skills() {
     <section className="section skills" id="skills" ref={ref}>
       <div className="container">
         <div className="section__head">
-          <h2 className="section__title" data-reveal>
+          <h2 className="section__title" data-split>
             Skills
           </h2>
         </div>

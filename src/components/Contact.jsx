@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section className="section contact" id="contact" ref={ref}>
       <div className="container">
-        <h2 className="contact__title" data-reveal>
+        <h2 className="contact__title" data-split>
           Let's build something that works.
         </h2>
         <p className="contact__lead" data-reveal>

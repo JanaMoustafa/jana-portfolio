@@ -8,6 +8,8 @@ import Skills from './components/Skills'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Marquee from './components/Marquee'
+import Cursor from './components/Cursor'
 import { initSmoothScroll, ScrollTrigger } from './lib/motion'
 
 export default function App() {
@@ -25,9 +27,11 @@ export default function App() {
       <a className="skip" href="#about">
         Skip to content
       </a>
+      <Cursor />
       <Nav />
       <main>
         <Hero />
+        <Marquee />
         <About />
         <Experience />
         <Projects />

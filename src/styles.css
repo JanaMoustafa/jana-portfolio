@@ -328,6 +328,9 @@ svg {
   min-height: 72px;
 }
 .nav__brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.125rem;
@@ -471,12 +474,15 @@ svg {
 .hero__inner {
   position: relative;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
+  will-change: transform, opacity;
 }
 .hero__name {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(3.5rem, 10vw, 8.25rem);
+  /* "Mostafa" is about 6.7em wide in Syne 800, so size it to the container. */
+  font-size: clamp(2.5rem, calc((100vw - 2 * var(--gutter)) / 7), 8.25rem);
   line-height: 0.9;
   letter-spacing: -0.035em;
   color: var(--white);
@@ -509,6 +515,18 @@ svg {
   padding-right: 0;
   margin-right: 0;
   border-right: 0;
+}
+@media (max-width: 599px) {
+  .hero__roles {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .hero__roles li {
+    padding: 0 0 0 14px;
+    margin: 0;
+    border-right: 0;
+    border-left: 2px solid var(--purple);
+  }
 }
 .hero__row {
   display: grid;
@@ -557,6 +575,7 @@ svg {
   bottom: 0;
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 8px;
   font-size: 0.875rem;
   color: var(--text-3);
@@ -690,6 +709,12 @@ svg {
     left: calc(-40px - 40px + 20px - 7px);
   }
 }
+.xp__org {
+  transition: color 400ms var(--ease-out);
+}
+.xp__item.is-active .xp__org {
+  color: var(--pink);
+}
 .xp__item.is-active .xp__dot {
   border-color: var(--pink);
   background: var(--pink);
@@ -773,7 +798,7 @@ svg {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  min-height: 32px;
+  min-height: 44px;
   font-weight: 600;
   color: var(--lavender);
   transition: color var(--t-base) var(--ease-out);
@@ -1035,6 +1060,17 @@ svg {
   background: rgba(18, 16, 22, 0.28);
 }
 
+@media (max-width: 380px) {
+  .filter {
+    padding: 0 14px;
+    font-size: 0.875rem;
+  }
+  .work,
+  .feature {
+    padding: 22px;
+  }
+}
+
 /* Project grid */
 .works {
   position: relative;
@@ -1165,6 +1201,7 @@ svg {
 .work__link {
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 4px;
   width: fit-content;
   font-size: 0.9375rem;
@@ -1320,7 +1357,8 @@ svg {
 .contact__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  /* "something" is about 7.7em wide in Syne 800; never let it exceed the column. */
+  font-size: min(clamp(2.5rem, 7vw, 5.5rem), calc((100vw - 2 * var(--gutter)) / 8));
   line-height: 0.98;
   letter-spacing: -0.03em;
   max-width: 14ch;
@@ -1385,11 +1423,144 @@ svg {
   margin-right: auto;
 }
 .footer__top {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--text-2);
   transition: color var(--t-base) var(--ease-out);
 }
 .footer__top:hover {
   color: var(--lavender);
+}
+
+/* ------------------------------------------------------------------
+   Split headlines and scrubbed words
+   ------------------------------------------------------------------ */
+/* Room under each masked word so descenders (g, j, p, y) are not clipped. */
+.sw-mask {
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+}
+.sc {
+  will-change: transform;
+}
+.scrub-word {
+  will-change: opacity;
+}
+
+/* ------------------------------------------------------------------
+   Marquee
+   ------------------------------------------------------------------ */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(28px, 5vw, 56px) 0;
+}
+.marquee__rows {
+  display: grid;
+  gap: clamp(6px, 1vw, 12px);
+  transform: rotate(-2deg) scale(1.04);
+  will-change: transform;
+}
+.marquee__row {
+  overflow: hidden;
+  padding: clamp(10px, 1.6vw, 18px) 0;
+}
+.marquee__row--solid {
+  background: linear-gradient(100deg, var(--purple), var(--pink));
+}
+.marquee__row--outline {
+  border-block: 1px solid var(--line-strong);
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+.marquee__half {
+  display: flex;
+  flex: none;
+}
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(18px, 2.4vw, 32px);
+  padding-right: clamp(18px, 2.4vw, 32px);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.5rem, 4.2vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.marquee__row--solid .marquee__item {
+  color: var(--white);
+}
+.marquee__row--outline .marquee__item {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--lavender);
+}
+.marquee__star {
+  width: 0.5em;
+  height: 0.5em;
+  fill: currentColor;
+}
+.marquee__row--outline .marquee__star {
+  fill: var(--pink);
+}
+
+/* ------------------------------------------------------------------
+   Cursor
+   ------------------------------------------------------------------ */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(226, 169, 241, 0.7);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    width 350ms var(--ease-out),
+    height 350ms var(--ease-out),
+    margin 350ms var(--ease-out),
+    background-color 350ms var(--ease-out),
+    border-color 350ms var(--ease-out),
+    scale 200ms var(--ease-out);
+}
+.cursor.is-hover {
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  background: rgba(255, 102, 196, 0.12);
+  border-color: var(--pink);
+}
+.cursor.is-label {
+  width: 84px;
+  height: 84px;
+  margin: -42px 0 0 -42px;
+  background: linear-gradient(100deg, var(--purple), var(--pink));
+  border-color: transparent;
+}
+.cursor.is-down {
+  scale: 0.85;
+}
+.cursor__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity 200ms var(--ease-out);
+}
+.cursor.is-label .cursor__label {
+  opacity: 1;
 }
 
 /* ------------------------------------------------------------------
@@ -1414,5 +1585,8 @@ svg {
   }
   .filters__pill {
     transition: none;
+  }
+  .cursor {
+    display: none;
   }
 }

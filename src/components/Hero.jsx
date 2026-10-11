@@ -20,17 +20,29 @@ export default function Hero() {
       const tl = gsap.timeline({ defaults: { ease: 'power4.out' } })
       tl.from('.hero__field', { opacity: 0, duration: 1.8, ease: 'power2.out' }, 0)
         .from('.hero__line-in', { yPercent: 112, duration: 1.15, stagger: 0.14 }, 0.15)
-        .from('.hero__roles li', { opacity: 0, y: 14, duration: 0.7, stagger: 0.07 }, 0.75)
-        .from(['.hero__lede', '.hero__meta', '.hero__actions'], { opacity: 0, y: 26, duration: 0.9, stagger: 0.1 }, 0.9)
+      // Role titles decode out of random characters, like data resolving into a label.
+      gsap.utils.toArray('.hero__roles li').forEach((li, i) => {
+        const at = 0.75 + i * 0.14
+        tl.fromTo(li, { opacity: 0 }, { opacity: 1, duration: 0.2 }, at).to(
+          li,
+          { duration: 1.2, scrambleText: { text: li.textContent, chars: '01<>/#_', speed: 0.55, revealDelay: 0.3 } },
+          at,
+        )
+      })
+      tl.from(['.hero__lede', '.hero__meta', '.hero__actions'], { opacity: 0, y: 26, duration: 0.9, stagger: 0.1 }, 0.9)
         .from('.hero__scroll', { opacity: 0, y: -10, duration: 0.8 }, 1.5)
         .add(() => el.classList.add('is-ready'), 1.2)
 
-      // The name drifts up a little faster than the page while scrolling away.
-      gsap.to('.hero__name', {
-        yPercent: -14,
-        ease: 'none',
-        scrollTrigger: { trigger: el, start: 'top top', end: 'bottom top', scrub: true },
-      })
+      // Scrolling away: the name drifts up faster than the page, the copy fades out,
+      // and the field behind it swells and dims.
+      const away = { trigger: el, start: 'top top', end: 'bottom 15%', scrub: true }
+      gsap.to('.hero__name', { yPercent: -14, ease: 'none', scrollTrigger: { ...away, end: 'bottom top' } })
+      gsap.fromTo('.hero__inner', { opacity: 1, y: 0 }, { opacity: 0, y: -70, ease: 'none', immediateRender: false, scrollTrigger: away })
+      gsap.fromTo(
+        '.hero__field',
+        { scale: 1, opacity: 1 },
+        { scale: 1.12, opacity: 0.3, ease: 'none', immediateRender: false, scrollTrigger: { ...away, end: 'bottom top' } },
+      )
     }, el)
     return () => ctx.revert()
   }, [])

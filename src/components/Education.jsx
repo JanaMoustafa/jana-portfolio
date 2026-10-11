@@ -8,7 +8,7 @@ export default function Education() {
     <section className="section edu" id="education" ref={ref}>
       <div className="container">
         <div className="section__head">
-          <h2 className="section__title" data-reveal>
+          <h2 className="section__title" data-split>
             Education
           </h2>
         </div>
@@ -27,7 +27,7 @@ export default function Education() {
         </ul>
 
         <div className="section__head section__head--sub">
-          <h3 className="projects__subtitle" data-reveal>
+          <h3 className="projects__subtitle" data-split>
             Certifications
           </h3>
           <p className="section__lead" data-reveal>
@@ -37,7 +37,7 @@ export default function Education() {
         <ul className="certs" data-reveal-group>
           {certifications.map((c) => (
             <li key={c.url} data-reveal>
-              <a className="cert" href={c.url} target="_blank" rel="noopener noreferrer">
+              <a className="cert" href={c.url} target="_blank" rel="noopener noreferrer" data-cursor="View">
                 <span className="cert__issuer">{c.issuer}</span>
                 <span className="cert__title">{c.title}</span>
                 <span className="cert__date">{c.date}</span>
