@@ -5,10 +5,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <p>
+        <p className="footer__name">
           {new Date().getFullYear()} {profile.name}
         </p>
-        <p className="footer__built">Built with React, Vite and GSAP</p>
         <a
           href="#home"
           className="footer__top"

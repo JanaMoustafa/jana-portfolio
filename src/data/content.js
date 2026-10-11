@@ -5,7 +5,7 @@ export const profile = {
   intro:
     'I build machine learning systems and the full-stack products around them: predictive models, anomaly-detection pipelines, fine-tuned language models, and bilingual web apps that real people use.',
   location: 'Cairo, Egypt',
-  status: 'Final-year student, Informatics & Computer Science, The British University in Egypt',
+  status: 'Fresh graduate, BSc Informatics & Computer Science, The British University in Egypt',
   availability: 'Open to data science, machine learning and software engineering roles',
   email: 'jana.sabry.abdelwahhab@gmail.com',
   phone: '+20 109 510 6023',
@@ -20,7 +20,7 @@ export const about = {
     'I turn messy data into models that hold up in production, then ship the software that puts them in front of people. Recent work ranges from a network-KPI prediction pipeline at Nokia with an R² above 0.99, to a bilingual home-services marketplace on Next.js and Supabase, to privacy-first apps delivered as installable PWAs.',
   facts: [
     { label: 'Focus', value: 'Machine learning, deep learning, NLP and full-stack web' },
-    { label: 'Studying', value: 'BSc Informatics & Computer Science, BUE, 2022 to 2026' },
+    { label: 'Degree', value: 'BSc Informatics & Computer Science, BUE, graduated 2026' },
     { label: 'Programme', value: 'Digital Egypt Pioneers Initiative, Data Science Track, 2025' },
     { label: 'Based in', value: 'Cairo, Egypt' },
     { label: 'Languages', value: 'Arabic, native. English, fluent' },
@@ -129,29 +129,22 @@ export const clientSites = [
   { name: 'AOM Tech', kind: 'Company website', url: 'https://aom-tech.vercel.app', stack: 'Next.js, React' },
 ]
 
-export const moreProjects = [
-  { name: 'Bone Tumor Detection System', description: 'Deep learning system for tumour detection using models trained from scratch alongside fine-tuned pretrained models.' },
-  { name: 'NLP & LLM Fine-Tuning', description: 'Multiple NLP projects leveraging large language models and a range of fine-tuning methods.' },
-  { name: 'Cloud Storage System', description: 'Full-stack system (backend, frontend and DevOps) with encryption, database linking and multiple security measures.' },
-  { name: 'Multi-Agent Communication System', description: 'Communication and coordination logic between multiple software agents.' },
-  { name: 'Emotion Detection System', description: 'Machine learning project for emotion recognition and classification.' },
-  { name: 'Traffic Light Manager', description: 'Hardware-based traffic light control system built from circuit components.' },
-  { name: 'Tetris', description: 'Interactive, responsive Tetris game written in C.' },
-  { name: 'Console Calculator', description: 'Command-line calculator for basic arithmetic, written in C.' },
-]
-
 export const skills = [
   {
     group: 'Data and AI',
-    items: ['Machine Learning', 'Deep Learning', 'NLP', 'LLM Fine-Tuning', 'Object Detection', 'Anomaly Detection', 'Data Analysis', 'Data Visualisation'],
+    items: ['Machine Learning', 'Deep Learning', 'Computer Vision', 'NLP', 'LLM Fine-Tuning', 'Object Detection', 'Anomaly Detection', 'Data Analysis', 'Data Visualisation'],
   },
   {
     group: 'Languages',
     items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'C#', 'SQL', 'Dart', 'C'],
   },
   {
+    group: 'ML libraries',
+    items: ['Scikit-learn', 'TensorFlow', 'Keras', 'XGBoost', 'LightGBM', 'OpenCV', 'Pandas', 'NumPy'],
+  },
+  {
     group: 'Web and tools',
-    items: ['React', 'Next.js', 'Supabase', 'PostgreSQL', 'MySQL', 'HTML', 'CSS', 'FlutterFlow', 'Git', 'Vercel'],
+    items: ['React', 'Next.js', 'Supabase', 'PostgreSQL', 'MySQL', 'HTML', 'CSS', 'FlutterFlow', 'Figma', 'Git', 'Vercel'],
   },
   {
     group: 'Ways of working',
@@ -164,7 +157,7 @@ export const education = [
     school: 'The British University in Egypt',
     degree: 'BSc, Informatics and Computer Science',
     period: 'Sep 2022 to Jun 2026',
-    note: 'Cairo, Egypt',
+    note: 'Cairo, Egypt. Graduated June 2026',
   },
   {
     school: 'Digital Egypt Pioneers Initiative',
