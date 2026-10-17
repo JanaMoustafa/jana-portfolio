@@ -146,6 +146,7 @@ export const clientSites = [
   { name: 'Hana Ayman Almohandes', kind: 'Personal portfolio', url: 'https://hana-portfolio-peach.vercel.app', stack: 'HTML, CSS, JavaScript' },
   { name: 'Hana Sameh El Saeed', kind: 'Personal portfolio', url: 'https://hana-portfolioo.vercel.app', stack: 'HTML, CSS, JavaScript' },
   { name: 'Retaj Raouf Rizk', kind: 'Personal portfolio', url: 'https://retaj-raouf.vercel.app', stack: 'HTML, CSS, JavaScript, GSAP' },
+  { name: 'Omar Elhfnawy', kind: 'Personal portfolio', url: 'https://omar-elhfnawy.vercel.app', stack: 'Next.js, Tailwind CSS, GSAP' },
   { name: 'AOM Tech', kind: 'Company website', url: 'https://aom-tech.vercel.app', stack: 'Next.js, React' },
 ]
 
