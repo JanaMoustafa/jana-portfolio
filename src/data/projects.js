@@ -1,5 +1,5 @@
 /**
- * Every project shown in the filterable grid under the three featured products.
+ * Every project shown in the filterable grid under the featured products.
  * category: 'ml' | 'apps' | 'design'
  * context: optional line naming team or course context, shown under the title.
  */

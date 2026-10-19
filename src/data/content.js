@@ -5,8 +5,8 @@ export const profile = {
   intro:
     'I build machine learning systems and the full-stack products around them: predictive models, anomaly-detection pipelines, fine-tuned language models, and bilingual web apps that real people use.',
   location: 'Cairo, Egypt',
-  status: 'Fresh graduate, BSc Informatics & Computer Science, The British University in Egypt',
-  availability: 'Open to data science, machine learning and software engineering roles',
+  status: 'Co-founder at InTheLine and freelance developer. BSc Informatics & Computer Science graduate, The British University in Egypt',
+  availability: 'Open to freelance projects, and to data science, machine learning and software engineering roles',
   email: 'jana.sabry.abdelwahhab@gmail.com',
   phone: '+20 109 510 6023',
   phoneHref: 'tel:+201095106023',
@@ -19,6 +19,7 @@ export const about = {
   statement:
     'I turn messy data into models that hold up in production, then ship the software that puts them in front of people. Recent work ranges from a network-KPI prediction pipeline at Nokia with an R² above 0.99, to a bilingual home-services marketplace on Next.js and Supabase, to privacy-first apps delivered as installable PWAs.',
   facts: [
+    { label: 'Now', value: 'Co-founder at InTheLine, and freelancing for clients' },
     { label: 'Focus', value: 'Machine learning, deep learning, NLP and full-stack web' },
     { label: 'Degree', value: 'BSc Informatics & Computer Science, BUE, graduated 2026' },
     { label: 'Programme', value: 'Digital Egypt Pioneers Initiative, Data Science Track, 2025' },
@@ -28,6 +29,29 @@ export const about = {
 }
 
 export const experience = [
+  {
+    role: 'Co-founder',
+    org: 'InTheLine',
+    period: '2026 to now',
+    summary: "B2B subscription for cafés that replaces the pager with the customer's own phone.",
+    stack: ['Next.js', 'React', 'PostgreSQL', 'Web Push', 'PWA'],
+    bullets: [
+      'Co-founded a product for cafés: the cashier creates an order, the customer scans a QR code, and their own phone rings when the drink is ready, with no pagers to buy and no app to install.',
+      'The product covers a cashier order board, a live customer order page, a bean-catching game with loyalty beans and coupons, and an owner dashboard for orders, average wait and busiest hours, in Arabic and English.',
+      'Sold as a monthly subscription per branch with nothing to install, and now in demos and pilots with Cairo cafés.',
+    ],
+  },
+  {
+    role: 'Freelance Web Developer',
+    org: 'Self-employed',
+    period: '2025 to now',
+    summary: 'Websites for clients, from personal portfolios to company sites.',
+    stack: ['React', 'Next.js', 'GSAP', 'Tailwind CSS', 'JavaScript', 'Vercel'],
+    bullets: [
+      'Design, build and deploy client websites end to end, from content and visual identity to hosting and continuous deployment on Vercel.',
+      "Delivered AOM Tech's company website and personal portfolios for five clients, all listed under Client websites.",
+    ],
+  },
   {
     role: 'Software Engineer, Founding Technology Team',
     org: 'Osta',
@@ -114,6 +138,14 @@ export const experience = [
 ]
 
 export const featuredProjects = [
+  {
+    name: 'InTheLine',
+    kind: 'Café ordering product, co-founder',
+    description:
+      "Replaces the café pager with the customer's own phone: scan a QR, get a ring when the drink is ready, and play a bean-catching game while you wait. Café owners get loyalty coupons and live numbers on orders and wait times.",
+    stack: ['Next.js', 'PostgreSQL', 'Web Push'],
+    accent: 'lavender',
+  },
   {
     name: 'Osta',
     kind: 'Marketplace platform',
