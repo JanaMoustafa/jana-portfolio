@@ -6,7 +6,7 @@ export const profile = {
     'I build machine learning systems and the full-stack products around them: predictive models, anomaly-detection pipelines, fine-tuned language models, and bilingual web apps that real people use.',
   location: 'Cairo, Egypt',
   status: 'Co-founder at InTheLine and freelance developer. BSc Informatics & Computer Science graduate, The British University in Egypt',
-  availability: 'Open to freelance projects, and to data science, machine learning and software engineering roles',
+  availability: 'Associate Software Consultant at QESTIT',
   email: 'jana.sabry.abdelwahhab@gmail.com',
   phone: '+20 109 510 6023',
   phoneHref: 'tel:+201095106023',
@@ -29,6 +29,16 @@ export const about = {
 }
 
 export const experience = [
+  {
+    role: 'Associate Software Consultant',
+    org: 'QESTIT',
+    period: 'Nov 2026 to now, full-time',
+    summary: 'Full-time software quality and testing consultant.',
+    stack: ['Playwright', 'End-to-end testing', 'Test automation', 'Manual testing'],
+    bullets: [
+      'Running manual and automated test cases using a range of testing techniques, including automated end-to-end testing with Playwright.',
+    ],
+  },
   {
     role: 'Co-founder',
     org: 'InTheLine',
@@ -87,15 +97,15 @@ export const experience = [
   },
   {
     role: 'Full-Stack Web Developer',
-    org: 'Fridge Check',
+    org: 'BiteDoneRight',
     period: '2026',
-    link: 'https://fridge-check-sooty.vercel.app',
-    summary: 'Bilingual recipe finder that matches recipes to the ingredients you already have.',
-    stack: ['Next.js', 'React', 'TheMealDB API', 'Vercel'],
+    link: 'https://bitedoneright-sooty.vercel.app',
+    summary: 'Bilingual fitness app that turns InBody body-composition results into a personal plan.',
+    stack: ['Google Sign-In', 'Vercel'],
     bullets: [
-      'Designed, built and deployed a bilingual (English and Arabic) recipe-finder web app that matches recipes to the ingredients a user already has and lists exactly what is missing.',
-      'Implemented free-text and quick-add ingredient entry, diet filters, best-match and fewest-missing sorting, and a pantry-staples option.',
-      'Added saved recipes and an auto-generated shopping list, and shipped it as an installable PWA with continuous deployment on Vercel.',
+      'Designed, built and deployed a bilingual (English and Arabic) web app that turns a user\'s InBody scan results into a meal plan, a training programme and a monthly progress report made for their body.',
+      'Implemented one-tap Google sign-in for new and returning users, and a free 30-day first month.',
+      'Shipped it with continuous deployment on Vercel.',
     ],
   },
   {
@@ -155,12 +165,12 @@ export const featuredProjects = [
     accent: 'purple',
   },
   {
-    name: 'Fridge Check',
-    kind: 'Recipe finder, live',
+    name: 'BiteDoneRight',
+    kind: 'Fitness and nutrition app, live',
     description:
-      'Type what is in your fridge and get recipes you can cook now, with the missing ingredients listed. Diet filters, saved recipes and a shopping list, in English and Arabic.',
-    stack: ['Next.js', 'React', 'TheMealDB API'],
-    url: 'https://fridge-check-sooty.vercel.app',
+      'Your InBody results become a meal plan, a training programme and a monthly progress report, all made for your body. Google sign-in, free for the first 30 days, in English and Arabic.',
+    stack: ['Google Sign-In', 'Vercel'],
+    url: 'https://bitedoneright-sooty.vercel.app',
     accent: 'pink',
   },
   {
