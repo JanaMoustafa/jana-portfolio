@@ -5,7 +5,7 @@ export const profile = {
   intro:
     'I build machine learning systems and the full-stack products around them: predictive models, anomaly-detection pipelines, fine-tuned language models, and bilingual web apps that real people use.',
   location: 'Cairo, Egypt',
-  status: 'Co-founder at InTheLine and freelance developer. BSc Informatics & Computer Science graduate, The British University in Egypt',
+  status: 'Associate Software Consultant at QESTIT and co-founder at InTheLine. BSc Informatics & Computer Science graduate, The British University in Egypt',
   availability: 'Associate Software Consultant at QESTIT',
   email: 'jana.sabry.abdelwahhab@gmail.com',
   phone: '+20 109 510 6023',
@@ -19,7 +19,7 @@ export const about = {
   statement:
     'I turn messy data into models that hold up in production, then ship the software that puts them in front of people. Recent work ranges from a network-KPI prediction pipeline at Nokia with an R² above 0.99, to a bilingual home-services marketplace on Next.js and Supabase, to privacy-first apps delivered as installable PWAs.',
   facts: [
-    { label: 'Now', value: 'Co-founder at InTheLine, and freelancing for clients' },
+    { label: 'Now', value: 'Associate Software Consultant at QESTIT, full-time, and co-founder at InTheLine' },
     { label: 'Focus', value: 'Machine learning, deep learning, NLP and full-stack web' },
     { label: 'Degree', value: 'BSc Informatics & Computer Science, BUE, graduated 2026' },
     { label: 'Programme', value: 'Digital Egypt Pioneers Initiative, Data Science Track, 2025' },
@@ -54,7 +54,7 @@ export const experience = [
   {
     role: 'Freelance Web Developer',
     org: 'Self-employed',
-    period: '2025 to now',
+    period: '2025 to 2026',
     summary: 'Websites for clients, from personal portfolios to company sites.',
     stack: ['React', 'Next.js', 'GSAP', 'Tailwind CSS', 'JavaScript', 'Vercel'],
     bullets: [
