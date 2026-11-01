@@ -42,12 +42,15 @@ export const experience = [
     role: 'Co-founder',
     org: 'InTheLine',
     period: '2026 to now',
-    summary: "B2B subscription for cafés that replaces the pager with the customer's own phone.",
+    link: 'https://in-the-line.vercel.app',
+    summary:
+      "B2B subscription that puts the whole café counter on the customer's own phone: menu, payment, live status, a ringing alert and loyalty, with no buzzers and no app.",
     stack: ['Next.js', 'React', 'PostgreSQL', 'Web Push', 'PWA'],
     bullets: [
-      'Co-founded a product for cafés: the cashier creates an order, the customer scans a QR code, and their own phone rings when the drink is ready, with no pagers to buy and no app to install.',
-      'The product covers a cashier order board, a live customer order page, a bean-catching game with loyalty beans and coupons, and an owner dashboard for orders, average wait and busiest hours, in Arabic and English.',
-      'Sold as a monthly subscription per branch with nothing to install, and now in demos and pilots with Cairo cafés.',
+      'Co-founded a product where the customer scans a QR code, joins once with a verified phone number or email and consent, and is recognised on every visit, then browses the menu, builds and reviews their own order and pays from their phone.',
+      'Payment comes first: card with an optional tip, or cash confirmed by the cashier and closed with a one-time code the customer enters, so an order reaches the prep queue only after the backend confirms payment and every cash sale has a record.',
+      'While they wait, customers follow a live status and play the Catch the Beans game with a daily bean cap, and their phone rings full screen until they answer when the order is marked ready. Feedback and taste videos after pickup earn more beans, all kept in one loyalty ledger and redeemable for coupons or items.',
+      'Owners get a verified, consenting customer list, visits and spend per customer, average wait and busiest hours per branch, and reward rules they control. Staff learn two actions, confirm cash and mark ready. In Arabic and English, sold per branch per month, and now in demos and pilots with Cairo cafés.',
     ],
   },
   {
