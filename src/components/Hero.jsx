@@ -82,10 +82,6 @@ export default function Hero() {
               <dt>Where</dt>
               <dd>{profile.location}</dd>
             </div>
-            <div>
-              <dt>Next</dt>
-              <dd>{profile.availability}</dd>
-            </div>
           </dl>
         </div>
 

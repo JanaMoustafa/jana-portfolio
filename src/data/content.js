@@ -6,7 +6,6 @@ export const profile = {
     'I build machine learning systems and the full-stack products around them: predictive models, anomaly-detection pipelines, fine-tuned language models, and bilingual web apps that real people use.',
   location: 'Cairo, Egypt',
   status: 'Associate Software Consultant at QESTIT and co-founder at InTheLine. BSc Informatics & Computer Science graduate, The British University in Egypt',
-  availability: 'Associate Software Consultant at QESTIT',
   email: 'jana.sabry.abdelwahhab@gmail.com',
   phone: '+20 109 510 6023',
   phoneHref: 'tel:+201095106023',
@@ -20,7 +19,7 @@ export const about = {
     'I turn messy data into models that hold up in production, then ship the software that puts them in front of people. Recent work ranges from a network-KPI prediction pipeline at Nokia with an R² above 0.99, to a bilingual home-services marketplace on Next.js and Supabase, to privacy-first apps delivered as installable PWAs.',
   facts: [
     { label: 'Now', value: 'Associate Software Consultant at QESTIT, full-time, and co-founder at InTheLine' },
-    { label: 'Focus', value: 'Machine learning, deep learning, NLP and full-stack web' },
+    { label: 'Focus', value: 'Software testing, machine learning, deep learning, NLP and full-stack web' },
     { label: 'Degree', value: 'BSc Informatics & Computer Science, BUE, graduated 2026' },
     { label: 'Programme', value: 'Digital Egypt Pioneers Initiative, Data Science Track, 2025' },
     { label: 'Based in', value: 'Cairo, Egypt' },
@@ -100,12 +99,12 @@ export const experience = [
     org: 'BiteDoneRight',
     period: '2026',
     link: 'https://bitedoneright-sooty.vercel.app',
-    summary: 'Bilingual fitness app that turns InBody body-composition results into a personal plan.',
-    stack: ['Google Sign-In', 'Vercel'],
+    summary: 'Bilingual nutrition and fitness app that turns InBody body-composition results into a personal plan.',
+    stack: ['Next.js', 'Neon (PostgreSQL)', 'Claude API', 'Spoonacular API', 'TheMealDB API', 'XPay', 'Vercel'],
     bullets: [
       'Designed, built and deployed a bilingual (English and Arabic) web app that turns a user\'s InBody scan results into a meal plan, a training programme and a monthly progress report made for their body.',
-      'Implemented one-tap Google sign-in for new and returning users, and a free 30-day first month.',
-      'Shipped it with continuous deployment on Vercel.',
+      'Implemented ingredient-based recipe search across the Spoonacular and TheMealDB APIs with a built-in recipe fallback when API limits are reached, plus a nutrition profile with calorie and macro targets, personal portion sizing based on USDA food data, favourites and a shopping list.',
+      'Added in-browser OCR for InBody scan photos with an optional Claude API backup reader, Google sign-in, consent-gated health data stored on Neon PostgreSQL, and a Pro tier with a 30-day free trial and XPay and Fawry payments.',
     ],
   },
   {
@@ -169,7 +168,7 @@ export const featuredProjects = [
     kind: 'Fitness and nutrition app, live',
     description:
       'Your InBody results become a meal plan, a training programme and a monthly progress report, all made for your body. Google sign-in, free for the first 30 days, in English and Arabic.',
-    stack: ['Google Sign-In', 'Vercel'],
+    stack: ['Next.js', 'Neon PostgreSQL', 'Claude API'],
     url: 'https://bitedoneright-sooty.vercel.app',
     accent: 'pink',
   },
@@ -211,8 +210,12 @@ export const skills = [
     items: ['React', 'Next.js', 'Supabase', 'PostgreSQL', 'MySQL', 'HTML', 'CSS', 'FlutterFlow', 'Figma', 'Git', 'Vercel'],
   },
   {
+    group: 'Testing and quality',
+    items: ['Software Testing', 'Manual Testing', 'Test Automation', 'End-to-end Testing', 'Playwright'],
+  },
+  {
     group: 'Ways of working',
-    items: ['Communication', 'Leadership', 'Problem-solving', 'Public speaking'],
+    items: ['Communication', 'Leadership', 'Problem-solving', 'Analytical thinking', 'Attention to detail', 'Public speaking'],
   },
 ]
 
